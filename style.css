@@ -1,0 +1,77 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+      background-color: black;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  body{
+      background-image: url(background/snakebg.jpg);
+      background-size :52%;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  
+
+
+  #board {
+      background: linear-gradient(#8bd88bc7, rgba(158, 158, 158, 0.788));
+      width: 90vmin;
+      height: 92vmin;
+      border: 2px solid black;
+      display: grid;
+      grid-template-rows: repeat(18, 1fr);
+      grid-template-columns: repeat(18, 1fr);
+  }
+  .head{
+      background: linear-gradient(black,rgb(255, 2, 2), black);
+      border: .25vmin solid black ;
+      border-radius: 12px;
+      transform: scale(1.02);
+  }
+  .snake {
+      background: linear-gradient(rgb(4, 0, 252),rgb(0, 255, 13));
+      border: .25vmin solid yellow;
+      border-radius: 20px;
+  }
+  .food {
+      background: linear-gradient(rgb(255, 56, 89) , cyan);
+      border: .25vmin solid black;
+      border-radius: 22px;
+  }
+
+  #scoreBox {
+    position: absolute;
+    top: 56px;
+    right: 166px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px 8px;
+    border: 2px dashed orangered;
+  }
+  #hiscoreBox {
+    position: absolute;
+    top: 170px;
+    right: 133px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px 8px;
+    border: 2px dashed orangered;
+  }
+ #name {
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 290px;
+    right: 108px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px 8px;
+    border: 2px dashed orangered;
+ }
